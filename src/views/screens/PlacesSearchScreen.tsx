@@ -8,6 +8,7 @@ import SearchBar from '../components/search-places/search-bar';
 import SearchResult from '../components/search-places/search-result';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCoords } from '../../state/ducks/places-search/actions';
+import { RootState } from '../../state/ducks/places-search';
 
 export default function TabOneScreen({
     navigation

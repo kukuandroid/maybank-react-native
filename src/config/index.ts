@@ -6,4 +6,4 @@ export const gmapGeocodingUrl =
     'https://maps.googleapis.com/maps/api/geocode/json?';
 export const proxyUrl = 'https://cors-anywhere.herokuapp.com';
 
-export const gmaps_api_key = google_maps_api_key;
+export const gmaps_api_key = "AIzaSyCsI9abmoQ86DoNEFmLDE7tHsaGxJsPE8Q";

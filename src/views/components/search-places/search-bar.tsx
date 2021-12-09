@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
-import { Marker } from 'react-native-maps';
-import { Image, View, Text, StyleSheet } from 'react-native';
-import { MARKER_IMAGE, SEARCH_PLACE } from '../../../constants/Maps';
+// import { Marker } from 'react-native-maps';
+import { View, StyleSheet } from 'react-native';
+// import { MARKER_IMAGE, SEARCH_PLACE } from '../../../constants/Maps';
 import { SIZES } from '../../../constants/Layout';
-import Colors from '../../../constants/Colors';
+// import Colors from '../../../constants/Colors';
 import { Searchbar as SearchBarMaterial } from 'react-native-paper';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-    fetchCoords,
-    fetchPlaces
-} from '../../../state/ducks/places-search/actions';
+import { fetchPlaces } from '../../../state/ducks/places-search/actions';
 import { RootState } from '../../../state/ducks/places-search';
 
 const SearchBar = ({ onSearch }) => {
     const [value, setValue] = useState('');
     const dispatch = useDispatch();
-    const maps = useSelector((state: RootState) => state.searchPlaces.places);
+    // const maps = useSelector((state: RootState) => state.searchPlaces.places);
 
     const handleChange = (newValue) => {
         setValue(newValue);
